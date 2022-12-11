@@ -1,7 +1,8 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import ComingSoon from "../pages/comingSoon";
+import TeacherMenu from "../pages/teacher/pages/menu/TeacherMenu";
 import PageNotFound from "../pages/pageNotFound";
 
 const RouteConfig = () => {
@@ -9,8 +10,8 @@ const RouteConfig = () => {
         <BrowserRouter>
             <Routes>
                 <React.Fragment>
-                    <Route path="/" exact element={<ComingSoon/>} />
-
+                    <Route path="/" exact element={<TeacherMenu/>} />
+                    <Route path="/login" exact element={<ComingSoon/>} />
                     <Route path="*" element={<PageNotFound/>} />
                 </React.Fragment>
             </Routes>
