@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@mui/material";
-import MenuGrid from "./view/menuGrid";
-import { HowToRegRounded } from '@mui/icons-material';
+import MenuGrid from "./view/MenuGrid";
+import { menuList } from "./dataSet/menuList";
 
 const TeacherMenu = () => {
     return (
@@ -18,16 +18,5 @@ const TeacherMenu = () => {
         </Grid>
     );
 }
-
-const menuList = [
-    {
-        icon: <HowToRegRounded/>,
-        text: 'Student Registration'
-    },
-    {
-        icon: <HowToRegRounded/>,
-        text: 'Add my new class'
-    }
-];
 
 export default TeacherMenu;

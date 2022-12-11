@@ -1,11 +1,11 @@
 import React from "react";
 import { Grid } from "@mui/material";
-import ButtonComponent from "../../../../../components/button";
+import BasicButton from "../../../../../components/Buttons/Button";
 
 const MenuGrid = (props) => {
     return (
         <Grid item xs={3} md={3}>
-            <ButtonComponent
+            <BasicButton
                 {...props}
             />
         </Grid>

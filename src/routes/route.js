@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
-import ComingSoon from "../pages/comingSoon";
-import TeacherMenu from "../pages/teacher/pages/menu/TeacherMenu";
+import ComingSoon from "../pages/ComingSoon/index";
+import TeacherMenu from "../pages/Teacher/pages/Menu/TeacherMenu";
 import PageNotFound from "../pages/pageNotFound";
 
 const RouteConfig = () => {
