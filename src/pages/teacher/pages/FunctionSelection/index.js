@@ -1,24 +1,25 @@
 import React from 'react';
 import { Grid } from '@mui/material';
-import InstituteGrid from './view/InstituteGrid';
+import { useNavigate } from 'react-router-dom';
+import FunctionItemGrid from './view/FunctionItemGrid';
 import { menuList } from './dataSet/menuList';
 
 const FunctionList = () => {
+    const navigate = useNavigate();
 
-    const onClickGrade = () => {
-        // alert('Succcess');
+    const onClickFunction = (navigation) => {
+        setTimeout(() => navigate(navigation), 300);
     }
-
 
     return (
         <Grid container spacing={2} m={2}>
             {
                 menuList.map((item, index) => 
-                    <InstituteGrid key={index}
+                    <FunctionItemGrid key={index}
                         icon={item.icon}
                         text={item.text}
                         variant={'contained'}
-                        onClick={() => onClickGrade()}
+                        onClick={() => onClickFunction(item.navigate)}
                     />
                 )
             }

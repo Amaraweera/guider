@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import InstituteList from '../pages/Teacher/pages/InstituteSelection';
 import GradeList from '../pages/Teacher/pages/GradeSelection';
 import FunctionList from '../pages/Teacher/pages/FunctionSelection';
+import StudentList from '../pages/Teacher/pages/Students/StudentList';
 // Common
 import ComingSoon from '../pages/ComingSoon/index';
 import PageNotFound from '../pages/pageNotFound';
@@ -18,6 +19,7 @@ const RouteConfig = () => {
                     <Route path="/" exact element={<InstituteList/>} />
                     <Route path="/teacher/grade" exact element={<GradeList/>} />
                     <Route path="/teacher/functions" exact element={<FunctionList/>} />
+                    <Route path="/teacher/students" exact element={<StudentList/>} />
                     {/* Common routes */}
                     <Route path="/login" exact element={<ComingSoon/>} />
                     <Route path="*" element={<PageNotFound/>} />

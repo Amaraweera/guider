@@ -8,7 +8,7 @@ const InstituteList = () => {
     const navigate = useNavigate();
 
     const onClickInstitute = () => {
-        setTimeout(() => navigate('/teacher/grade'), 500);
+        setTimeout(() => navigate('/teacher/grade'), 300);
     }
 
     return (

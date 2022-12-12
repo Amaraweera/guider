@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid } from '@mui/material';
 import BasicButton from '../../../../../components/Buttons/Button';
 
-const InstituteGrid = (props) => {
+const GradeItemGrid = (props) => {
     return (
         <Grid item xs={3} md={3}>
             <BasicButton
@@ -12,4 +12,4 @@ const InstituteGrid = (props) => {
     );
 }
 
-export default InstituteGrid;
+export default GradeItemGrid;

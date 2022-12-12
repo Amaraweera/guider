@@ -5,18 +5,22 @@ import {
 export const menuList = [
     {
         icon: <SchoolRounded/>,
-        text: 'Students'
+        text: 'Students',
+        navigate: '/teacher/students'
     },
     {
         icon: <SchoolRounded/>,
-        text: 'Reports'
+        text: 'Reports',
+        navigate: ''
     },
     {
         icon: <SchoolRounded/>,
-        text: 'Attendence'
+        text: 'Attendence',
+        navigate: ''
     },
     {
         icon: <SchoolRounded/>,
-        text: 'Fees'
+        text: 'Fees',
+        navigate: ''
     }
 ];
