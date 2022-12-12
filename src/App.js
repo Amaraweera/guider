@@ -1,6 +1,7 @@
 import React from 'react';
 import { createTheme, ThemeProvider } from "@mui/material";
 import RouteConfig from './routes/route';
+import Layout from './layout/Layout';
 
 import './style/index.scss';
 import { mainTheme } from './style/theme/theme';
@@ -12,9 +13,11 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <React.Fragment>
-        <RouteConfig/>
-      </React.Fragment>
+      <Layout>
+        <React.Fragment>
+          <RouteConfig/>
+        </React.Fragment>
+      </Layout>
     </ThemeProvider>
   );
 }

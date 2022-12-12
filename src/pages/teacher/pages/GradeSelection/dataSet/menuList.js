@@ -1,15 +1,14 @@
-import { 
-    HowToRegRounded,
+import {
     SchoolRounded
  } from '@mui/icons-material';
 
 export const menuList = [
     {
-        icon: <HowToRegRounded/>,
-        text: 'Student Registration'
+        icon: <SchoolRounded/>,
+        text: 'Grade 10'
     },
     {
         icon: <SchoolRounded/>,
-        text: 'Add my new class'
+        text: 'Grade 11'
     }
 ];
