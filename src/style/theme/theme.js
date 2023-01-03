@@ -1,15 +1,15 @@
 export const mainTheme = {
   palette: {
     primary: {
-      light: '#b26500',
+      light: '#ffa733',
       main: '#ff9100',
-      dark: '#ffa733',
+      dark: '#b26500',
       contrastText: '#fff',
     },
     secondary: {
-      light: '#b28704',
+      light: '#ffcd38',
       main: '#ffc107',
-      dark: '#ffcd38',
+      dark: '#b28704',
       contrastText: '#000',
     },
   }

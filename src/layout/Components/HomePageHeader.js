@@ -4,14 +4,13 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import { useTheme } from '@mui/material/styles';
 import TemporaryDrawer from '../Drawer';
 
-const Header = () => {
+const HomePageHeader = () => {
     const theme = useTheme();
 
     const [auth, setAuth] = React.useState(true);
@@ -34,16 +33,6 @@ const Header = () => {
         <Box sx={{ flexGrow: 1}}>
             <AppBar position="static">
                 <Toolbar>
-                <IconButton
-                    size="large"
-                    edge="start"
-                    color="inherit"
-                    aria-label="menu"
-                    sx={{ mr: 2 }}
-                    onClick={()=> handleDrawer(true)}
-                >
-                    <MenuIcon />
-                </IconButton>
                 <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
                     GUIDER
                 </Typography>
@@ -90,4 +79,4 @@ const Header = () => {
     );
 }
 
-export default Header;
+export default HomePageHeader;

@@ -3,13 +3,15 @@ import DataTable from '../../../../../components/DataTable';
 
 const StudentList = () => {
     return (
-        <DataTable
-            columns={columns}
-            rows={rows}
-            pageSize={5}
-            rowsPerPageOptions={[5]}
-            checkboxSelection
-        />
+        <>
+            <DataTable
+                columns={columns}
+                rows={rows}
+                pageSize={5}
+                rowsPerPageOptions={[5]}
+                checkboxSelection
+            />
+        </>
     );
 }
 

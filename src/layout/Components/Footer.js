@@ -1,21 +1,40 @@
 import * as React from 'react';
-import { AppBar, Box } from '@mui/material';
+import { Box } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
+import Paper from '@mui/material/Paper';
+import Container from '@mui/material/Container';
 
 const Footer = () => {
+    const theme = useTheme();
+
     return (
-        <Box sx={{ flexGrow: 1}}>
-            {/* <AppBar position="static" sx={{
-                height:50,
-                left: 0,
-                bottom: 0,
+        <Paper 
+            sx={{
+                marginTop: 'calc(10% + 60px)',
                 width: '100%',
-                textAlign: 'center',
-                marginTop: 100
-            }}>
-                <Typography variant="subtitle2">All Copy Rights GUIDER</Typography>
-            </AppBar> */}
-        </Box>
+                position: 'fixed',
+                bottom: 0,
+                bgcolor: theme.palette.primary.main
+            }}
+            square variant="outlined"
+        >
+            <Container maxWidth="lg">
+                <Box
+                    sx={{
+                        flexGrow: 1,
+                        justifyContent: "center",
+                        display: "flex",
+                        mb: 2,
+                        marginTop: 2,
+                    }}
+                >
+                    <Typography variant="caption" sx={{color: theme.palette.primary.contrastText}}>
+                        Copyright ©2022. Guider
+                    </Typography>
+                </Box>
+            </Container>
+    </Paper>
     );
 }
 
